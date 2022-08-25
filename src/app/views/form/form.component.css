@@ -1,0 +1,54 @@
+h1{
+    color: white;
+}
+
+form{
+    width: 30%;
+    background: darkslategray;
+    padding: 20px;
+    margin: 0px auto;
+    margin-top: 20px;
+    height: 500px;
+    border-radius: 5px;
+}
+
+label{
+    font-size: 20px;
+}
+
+.form-container{
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    width: 50%;
+    margin: 0px auto;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+}
+
+input{
+    color: white;
+}
+
+h1{
+    color: white;
+    margin-top: 15px;
+}
+
+ul{
+    color: white;
+}
+
+li{
+    font-size: 18px;
+}
+
+.product{
+    width: 50%;
+    margin: 0px auto;
+}

@@ -1,0 +1,34 @@
+<form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+    <div class="form-container">
+        <h1>Formulario</h1>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Nombre</mat-label>
+            <input matInput formControlName="name">
+        </mat-form-field>
+        <br />
+
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Descripción</mat-label>
+            <input matInput formControlName="description">
+        </mat-form-field>
+        <br />
+
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Tipo</mat-label>
+            <input matInput formControlName="type">
+        </mat-form-field>
+        <br />
+        <button type="submit" [disabled]="productForm.invalid">Submit</button>
+
+        <!-- Renderizado de los datos del producto -->
+        <div class="product" *ngIf="dataSent">
+            <h1>Datos del producto:</h1>
+            <ul>
+                <li>Nombre: {{name}}</li>
+                <li>Descripción: {{description}}</li>
+                <li>Tipo: {{type}}</li>
+            </ul>
+        </div>
+    </div>
+</form>
